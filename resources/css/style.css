@@ -2,7 +2,13 @@
 
 }
 /*  header  */
-header .layerCha{width: 100%;height: 800px;}
-header .layerCha img{width: 100%;height: 800px;}
-header .layerCha .layerChild{    width: 100%;height: 800px;position: absolute;top: 0;left: 0; background-color: #2b2b31e8;}
+header .layerCha{width: 100%; position: relative;}
+header .layerCha img{width: 100%;height: 750px;}
+header .layerCha .layerChild{    width: 100%;height: 100%;position: absolute;top: 0;left: 0; background-color: #2b2b31e8;}
+header .layerCha .slide{position: absolute;top: 25%;left: 9%;color: white;width: 84%;}
+header .layerCha .slide .nutLeft span:before{content: '\2190';font-size: 40px;    color: #b1b1b5; transition: 0.3s;}
+header .layerCha .slide .nutRight span:before{content: '\2192';font-size: 40px;    color: #b1b1b5; transition: 0.3s;}
+header .layerCha .slide .nutLeft:hover span:before, header .layerCha .slide .nutRight:hover span:before{color: #fff;}
+header .layerCha .slide h1,header .layerCha .slide .nutLeft span:before,header .layerCha .slide .nutRight span:before {float: left;}
+header .layerCha .slide h1{padding-right: 60%;}
 /*  end header */
