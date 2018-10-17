@@ -19,7 +19,6 @@ $(function(){
 			$('#banner').css('background',urlImg);
 			console.log(count);
 		}
-		$('#banner').css('background',);
 		if(value != -900){
 			value += -300;
 			x= "translateX("+value+"px)";
@@ -33,7 +32,21 @@ $(function(){
 	})
 });
 $(function(){
+
 	$('.nutLeft').click(function(){
+		if(count!=0){
+			count--;
+			if(count ==0){urlImg="url(resources/images/home_bg.jpg) center center / cover no-repeat";}
+			else{urlImg="url(resources/images/home_bg"+count+".jpg) center center / cover no-repeat";}	
+			$('#banner').css('background',urlImg);
+			console.log(count);
+		}
+		else if(count == 0){
+			count=3;
+			urlImg="url(resources/images/home_bg3.jpg) center center / cover no-repeat";
+			$('#banner').css('background',urlImg);
+			console.log(count);
+		}
 		if(value != 0){
 			value += 300;
 			x= "translateX("+value+"px)";
