@@ -3,6 +3,7 @@ var value=0;
 var x;
 var urlImg;
 var count=0;
+var kiemTraSearch=0;
 $(function(){
 	$('.nutRight').click(function(){
 		var getBanner=document.getElementById("banner");
@@ -60,3 +61,21 @@ $(function(){
 	})
 });
 /* end move slide Image*/
+/* show search bar*/
+$(function(){
+	$('.searchIcon').click(function(){
+		var temp=1;
+		if(kiemTraSearch == 0){
+			$('.searchBar').removeClass("hideSearchBar");
+			$('.searchBar').addClass("showSearchBar");
+			kiemTraSearch=temp;
+		}
+		else{
+			$('.searchBar').removeClass("showSearchBar");
+			$('.searchBar').addClass("hideSearchBar");
+			temp -=1;
+			kiemTraSearch =temp;
+		}
+	});
+});
+/* end search bar*/

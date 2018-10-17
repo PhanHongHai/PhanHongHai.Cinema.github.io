@@ -11,16 +11,17 @@
 }
 /* end font */
 /*  header  */
+header{position: relative;}
 header .layerCha{width: 100%; position: relative;    overflow: hidden;}
 header .layerCha #banner{width: 100%;height: 750px;transition: 1s;}
 header .layerCha .layerChild{    width: 100%;height: 100%;position: absolute;top: 0;left: 0; background-color: #2b2b31e8;}
-header .layerCha .slide{position: absolute;top: 19%;left: 9%;color: white;width: 84%;}
+header .layerCha .slide{position: absolute;top: 23%;left: 9%;color: white;width: 84%;}
 header .layerCha .slide .nutLeft span:before{content: '\2190';font-size: 40px;    color: #b1b1b5; transition: 0.3s; cursor: pointer;}
 header .layerCha .slide .nutRight span:before{content: '\2192';font-size: 40px;    color: #b1b1b5; transition: 0.3s; cursor: pointer;}
 header .layerCha .slide .nutLeft:hover span:before, header .layerCha .slide .nutRight:hover span:before{color: #fff;}
 header .layerCha .slide h1,header .layerCha .slide .nutLeft span:before,header .layerCha .slide .nutRight span:before {float: left;}
 header .layerCha .slide h1{padding-right: 60%;    font-family: roboto,sans-serif;}
-header .layerCha .slideCha{    top: 28%; position: absolute;left: 7%;width: 87%;}
+header .layerCha .slideCha{    top: 34%; position: absolute;left: 7%;width: 87%;}
 header .layerCha .slideCha .frame{ position: relative;   overflow: hidden;}
 header .layerCha .slideImg{    width: 2300px;height: 410px;}
 header .layerCha .slideImg .slideChild{float: left;padding-left: 1%; transition: 0.9s;    position: relative;    transform: translateX(0);}
@@ -36,7 +37,8 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
 
 
 /*  menu  */
-.menu{    width: 100%;position: absolute;top: 0;left: 0;height: 90px; background-color: #2b2b31;    box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);}
+.menu{    width: 100%;position: absolute;top: 0;left: 0;height: 90px; background-color: #2b2b31;    box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);    z-index: 2;
+}
 .menu h2 a{color: white;text-decoration: none;}
 .menu h2 a span{color: #ff5860 ;}
 .menu .logo, .menu .subMenu, .menu .search, .menu .logIn{float: left;}
@@ -51,9 +53,18 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
     box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);}
 .menu .logIn a{color: #fff;text-decoration: none;    padding: 12px 40px;display: block;}
 .menu .logIn:hover{opacity: 1;}
-
+.searchBar{z-index: 1;opacity: 0;visibility: hidden;display: block; box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);background-color: #2b2b31; position: absolute;top: 4%;width: 100%;height: 60px;border-top: 1px solid rgba(255,255,255,0.05);}
 
 /*  end menu */
+/*  search bar */
+.searchBar form input{height: 60px;width: 100%; border: none;background-color: #28282d; text-indent: 22px; color: white;position: relative;}
+.searchBar form{width: 100%;}
+.searchBar form button{  ;transition: 0.5s;  ;position: absolute; top: 20%;right: 6%;width: 90px;height: 40px;border: none;background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);opacity: 0.85;border-radius: 5px;color: white;}
+.searchBar form button:hover{opacity: 1;}
+header .showSearchBar{animation: showSearch 0.5s ease-in-out;top: 12%;opacity: 1;visibility: visible;}
+header .hideSearchBar{animation: hideSearch 0.5s ease-in-out; top: 4%;opacity: 0;visibility: hidden;}
+@-webkit-keyframes showSearch{0%{top: 4%;opacity: 0;visibility: hidden;} 100%{top: 12%;opacity: 1;visibility: visible;z-index: 3;}}
+@-webkit-keyframes hideSearch{0%{top: 12%;opacity: 1;visibility: visible;} 100%{top: 4%;opacity: 0;visibility: hidden;}}
 
-
+/* end search */
 /*  end header */
