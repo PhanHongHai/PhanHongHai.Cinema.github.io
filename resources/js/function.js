@@ -1,13 +1,11 @@
 /* move slide Image*/
-var value=0;
-var x;
-var urlImg;
-var count=0;
-var kiemTraSearch=0;
+var value=0,count=0,kiemTraSearch=0;
+var x,urlImg;
 $(function(){
 	$('.nutRight').click(function(){
 		var getBanner=document.getElementById("banner");
-
+		var getSlide = document.getElementsByClassName("slideChild");
+		/* banner */
 		if(count!=3){
 			count++;
 			urlImg="url(resources/images/home_bg"+count+".jpg) center center / cover no-repeat";
@@ -20,18 +18,33 @@ $(function(){
 			$('#banner').css('background',urlImg);
 			console.log(count);
 		}
+		/*end banner*/
+		/*slide*/
 		if(value != -900){
 			value += -300;
-			x= "translateX("+value+"px)";
+			x= "translateX("+value+"px) scale(0.9)";
 			$('.slideChild').css('transform',x);
 		}
 		else{
 			value=0;
-			x="translateX("+value+"px)";
+			x="translateX("+value+"px) scale(0.9)";
 			$('.slideChild').css('transform',x);
+
 		}
+		/*end slide*/
 	})
 });
+/* hover slide*/
+$(function(){
+	$('.slideChild').hover(function(){
+			x= "translateX("+value+"px) scale(1)";
+			$(this).css('transform',x);
+	},function(){
+		x= "translateX("+value+"px) scale(0.9)";
+			$(this).css('transform',x);
+	})
+})
+/* end hover*/
 $(function(){
 
 	$('.nutLeft').click(function(){
@@ -50,12 +63,12 @@ $(function(){
 		}
 		if(value != 0){
 			value += 300;
-			x= "translateX("+value+"px)";
+			x= "translateX("+value+"px) scale(0.9)";
 			$('.slideChild').css('transform',x);
 		}
 		else{
 			value=-900;
-			x="translateX("+value+"px)";
+			x="translateX("+value+"px) scale(0.9)";
 			$('.slideChild').css('transform',x);
 		}
 	})
