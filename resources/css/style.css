@@ -79,7 +79,7 @@ header .hideSearchBar{animation: hideSearch 0.5s ; top: 4%;}
 }
 .main .background{
 	width: 100%;
-	height: 750px;
+	height: 500px;
 	transition: 1.3s ease-in-out;
 }
 .main .layer{
@@ -91,4 +91,90 @@ header .hideSearchBar{animation: hideSearch 0.5s ; top: 4%;}
 	background-color: #2b2b31c9;
 }
 
+.mainMaxwidth{
+	max-width: 870px;
+	float: none;
+    margin: auto;
+    clear: both;
+}
+.detail_main{
+	width: 870px;
+    height: 400px;
+    margin: 0 auto;
+    position: absolute;
+    top: 30%;
+    left: 16%;
+}
+.poster>img{
+	border-radius: 4px;
+    box-shadow: 0 0 16px 0 rgba(0,0,0,.5);
+    height: 300px;
+    width: 225px;
+}
+.poster .showHover{
+	
+    opacity: 0;
+    transition: all .2s;
+}
+.poster .trailer{
+	position: absolute;
+    top: 50%;
+    left: 36%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    background: 0 0;
+    border: none;
+}
+.poster:hover .showHover{
+	opacity: 1;
+	cursor: pointer;
+}
+.detail_main .info{
+	top: -60%;
+    left: 35%;
+}
+.info .day{
+	color: #e9e9e9;
+	font-size: 14px;
+}
+.info .age{
+	margin-right: 6px;
+    margin-top: 6px;
+    float: left;
+    background-color: #fb4226;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 0 5px;
+    display: inline-block;
+    text-align: center;
+}
+.info .tit{
+	color: #e9e9e9;
+	font-size: 24px;
+}
+.info .time{
+	color: #e9e9e9;
+	font-size: 14px;
+}
+.info .theloai{
+	color: #e9e9e9;
+	font-size: 14px;
+}
+.info .ticket{
+	font-size: 16px;
+    border-radius: 4px;
+    text-align: center;
+    background: 0 0;
+    padding: 7px 25px;
+    transition: all .2s;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    background-color: #fb4226;
+    border: none;
+    color: #fff;
+}
+.info .ticket:hover{
+	cursor: pointer;
+}
 /* ---------------------------------------------- Kết thúc: Phần Chi Tiết Phim ---------------------------------*/
