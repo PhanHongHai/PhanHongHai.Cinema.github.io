@@ -94,7 +94,7 @@ $(function(){
 /* end search bar*/
 /* content movie*/
 $(function(){
-	$('.catetory ul li a').click(function(){
+	$('.catetory ul li a').click(function(){a
 		$('.catetory ul li a').removeClass('vien');
 		$(this).addClass('vien');
 		var movieIndex=$('.catetory ul li a').index(this);
