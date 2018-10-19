@@ -113,3 +113,23 @@ $(function(){
 	})
 })
 /* end content movie*/
+/* lich chieu*/
+$(function(){
+	$('.day ul li').click(function(){
+		$('.day ul li').css('color','#928e8e');
+		$(this).css('color','#fff');
+		var indexDay=$('.day ul li').index(this);
+		$('.blockLichMovie .lichMovies').removeClass('showInfoMovie');
+		$('.blockLichMovie .lichMovies:nth-child('+(indexDay+1)+')').addClass('showInfoMovie');
+		console.log(indexDay);
+	})
+})
+
+$(function(){
+	$('.tenRap ul li').click(function(){
+		$('.tenRap ul li').css('color','#928e8e');
+		$(this).css('color','#fff');
+
+	})
+})
+/* end lich chieu*/
