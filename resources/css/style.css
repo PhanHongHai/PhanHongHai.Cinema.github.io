@@ -46,7 +46,7 @@ header .layerCha .slideCha .frame{ position: relative;   overflow: hidden;}
 header .layerCha .slideImg{    width: 2300px;height: 410px;}
 header .layerCha .slideImg .slideChild {float: left;padding-left: 1%; transition: 0.9s;    position: relative;    transform: translateX(0) scale(0.9);}
 header .layerCha .slideImg .kichHoatSlide {transform: scale(1) !important;}
-header .layerCha .slideImg .slideChild .play{    position: absolute;top: 37%;left: 44%;width:20%;z-index: 4;transition: 0.5s;opacity: 0;cursor: pointer;}
+header .layerCha .slideImg .slideChild .play{position: absolute;top: 37%;left: 41%;width: 25%;z-index: 4;transition: 0.5s;opacity: 0;cursor: pointer;}
 header .layerCha .slideImg .slideChild .layerSlideChild{width: 270px;height: 400px;position: absolute;top: 0;opacity: 0; transition: 0.5s;    z-index: 2;}
 header .layerCha .slideImg .slideChild:hover .layerSlideChild{background: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%); opacity: 0.65;    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);}
 header .layerCha .slideImg .slideChild:hover .play{opacity: 1;}
@@ -103,6 +103,10 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
 .part2 .contentPart2{    width: 100%;position: relative; background-color: #2b2b31;height: 700px;}
 .part2 .contentPart2 .cateMove{   position: absolute; top: 6%;left: 8%;opacity: 0;visibility: hidden;}
 .part2 .contentPart2 .cateMove .movie{ text-align: center;position: relative;}
+.part2 .contentPart2 .cateMove .movie .nenLayout{ transition: 0.4s   ;width: 100%;height: 77%;position: absolute;top: 0;left: 0;opacity: 0;visibility: hidden;background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);}
+.part2 .contentPart2 .cateMove .movie .nenLayout img{    height: 24%;position: absolute;top: 35%;left: 32%;display:none;}
+.part2 .contentPart2 .cateMove .movie:hover .nenLayout{opacity:0.8;visibility: visible;}
+.part2 .contentPart2 .cateMove .movie:hover .nenLayout img{display: block;}
 .part2 .contentPart2 .cateMove .movie h3 a, .part2 .contentPart2 .cateMove .movie h4 a{font-family: ubuntu;text-decoration;}
 .part2 .contentPart2 .cateMove .movie h3 a{    font-size: 18px;color: #fff; margin: 0;}
 .part2 .contentPart2 .cateMove .movie h4 a{    font-size: 14px;color: #FF5860; margin: 0;}
@@ -113,7 +117,7 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
 @-webkit-keyframes movieRight{0%{top: 100%;visibility: hidden;opacity: 0;} 100%{top: 6%;visibility: visible;opacity: 1;}}
 /* end part 2 */
 /*  lich chieu */
-.lichChieu{    width: 100%;height: 700px;position: relative;}
+.lichChieu{    width: 100%;height: 700px;position: relative;    overflow: hidden;}
 .lichChieu img{height: 700px;}
 .lichChieu .formLichChieu{width: 72%;height: 300px;position: absolute;top: 12%;left: 14%;color: white;}
 .lichChieu .formLichChieu .dateTime{box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);height: 80px;background: #312f2f59;}
@@ -136,13 +140,15 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
 .lichChieu .formLichChieu .suatChieu .lichMovies ul li .dateTimeMovie ul li a{transition: 0.3s;text-decoration: none;    color: #35de33;font-size: 30px;cursor: pointer;}
 .lichChieu .formLichChieu .suatChieu .lichMovies ul li .dateTimeMovie ul li a:hover{ color: #b7ea91;}
 /*  so ghe */
-.lichChieu .numberGhe{width: 50%;height: 410px;position: absolute;top: 40%;left: 27%;background: #212529;}
-.lichChieu .numberGhe:before{content:'';background: url(../images/closeIcon.png);background: url(../images/closeIcon.png);width: 100px;height: 100px;position: absolute;right: -12%;top: -3%;background-size: 30px 30px;background-repeat: no-repeat;cursor: pointer;/* background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%); */}
+.lichChieu .numberGhe{width: 50%;height: 410px;position: absolute;top: 31%;left: 27%;background: #212529;opacity: 0;visibility: hidden;}
+.lichChieu .showNumberGhe{animation: showNumberGhe 0.5s;top: 31%;opacity: 1;visibility: visible;}
+.lichChieu .hideNumberGhe{animation: hideNumberGhe 0.5s;}
+.lichChieu .numberGhe:before{content:'';background: url(../images/closeIcon.png);width: 32px;height: 32px;position: absolute;right: -2%;top: -3%;background-size: 30px 30px;background-repeat: no-repeat;cursor: pointer;}
 .lichChieu .numberGhe  h3{color: white;text-align: center;font-family: ubuntu;margin-top: 2%;}
 .lichChieu .numberGhe .manHinh{width: 60%;height: 5px;margin-left: 20%;background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);}
 .lichChieu .numberGhe .listGhe .dayA{    width: 100%;height: 35px;margin-top: 4%;}
 .lichChieu .numberGhe .listGhe .dayB,.lichChieu .numberGhe .listGhe .dayC,.lichChieu .numberGhe .listGhe .dayD,.lichChieu .numberGhe .listGhe .dayE{height: 35px;width: 100%;}
-.lichChieu .numberGhe .listGhe .seat{width: 25px;height: 25px;background: #e2dede;display: inline-block;border-radius: 3px;margin-right: 4px;cursor: pointer;}
+.lichChieu .numberGhe .listGhe .seat{width: 25px;height: 25px;background: #e2dede;display: inline-block;border-radius: 3px;margin-right: 4px;}
 .lichChieu .numberGhe .listGhe h4{display: inline-block;color: #e6e2e2;font-size: 20px;margin-right: 16%;margin-left: 13%;width: 24px;}
 .lichChieu .numberGhe .infoSeat{    width: 100%;height: 45px; margin-top: 7%;color: #e6e2e2; }
 .lichChieu .numberGhe .infoSeat ul li{list-style: none;float: left;padding-left: 11%;}
@@ -155,6 +161,8 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
 .lichChieu .numberGhe .nutDatve{transition: 0.5s;opacity: 0.85;width: 130px;height: 40px;background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);border-radius: 3px;margin: auto;}
 .lichChieu .numberGhe .nutDatve a{text-decoration: none;color: white;padding-top: 7px;padding-left: 14px;display: block;}
 .lichChieu .numberGhe .nutDatve:hover{opacity: 1;}
+@-webkit-keyframes showNumberGhe{0%{top: 120%;opacity: 0;visibility: hidden;} 100%{top: 31%;opacity: 1;visibility: visible;}}
+@-webkit-keyframes hideNumberGhe{ 0%{top: 31%;opacity: 1;visibility: visible;} 100%{top: 120%;opacity: 0;visibility: hidden;}}
 /* end so ghe*/
 
 
