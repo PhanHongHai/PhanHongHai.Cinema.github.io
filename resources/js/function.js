@@ -32,11 +32,9 @@ $(function(){
 
 		}
 		/*end slide*/
-	})
-});
+	});
 
-/* menu scroll*/
-$(function(){
+	/* menu scroll*/
 	$(window).scroll(function(event) {
 		var vitri=$("html").scrollTop();
 		console.log(vitri);
@@ -51,21 +49,17 @@ $(function(){
 			$('.searchBar').removeClass('searchZoom');
 		}
 	});
-})
-/* end menu scroll */
+	/* end menu scroll */
 
-/* hover slide*/
-$(function(){
+	/* hover slide*/
 	$('.slideChild').hover(function(){
 		x= "translateX("+value+"px) scale(1)";
 		$(this).css('transform',x);
 	},function(){
 		x= "translateX("+value+"px) scale(0.9)";
 		$(this).css('transform',x);
-	})
-})
-/* end hover*/
-$(function(){
+	});
+	/* end hover*/
 
 	$('.nutLeft').click(function(){
 		if(count!=0){
@@ -92,10 +86,10 @@ $(function(){
 			$('.slideChild').css('transform',x);
 		}
 	})
-});
-/* end move slide Image*/
-/* show search bar*/
-$(function(){
+
+	/* end move slide Image*/
+	/* show search bar*/
+
 	$('.searchIcon').click(function(){
 		var temp=1;
 		if(kiemTraSearch == 0){
@@ -110,10 +104,10 @@ $(function(){
 			kiemTraSearch =temp;
 		}
 	});
-});
-/* end search bar*/
-/* content movie*/
-$(function(){
+
+	/* end search bar*/
+	/* content movie*/
+
 	$('.catetory ul li a').click(function(){
 		$('.catetory ul li a').removeClass('vien');
 		$(this).addClass('vien');
@@ -130,11 +124,11 @@ $(function(){
 		$('.cateMove:nth-child('+(movieIndex)+')').addClass('movieLeft');
 		$('.cateMove:nth-child('+(movieIndex+1)+')').addClass('movieRight');
 
-	})
-})
-/* end content movie*/
-/* lich chieu*/
-$(function(){
+	});
+
+	/* end content movie*/
+	/* lich chieu*/
+
 	$('.day ul li').click(function(){
 		$('.day ul li').css('color','#928e8e');
 		$(this).css('color','#fff');
@@ -142,14 +136,25 @@ $(function(){
 		$('.blockLichMovie .lichMovies').removeClass('showInfoMovie');
 		$('.blockLichMovie .lichMovies:nth-child('+(indexDay+1)+')').addClass('showInfoMovie');
 		console.log(indexDay);
-	})
-})
+	});
 
-$(function(){
+
 	$('.tenRap ul li').click(function(){
 		$('.tenRap ul li').css('color','#928e8e');
 		$(this).css('color','#fff');
 
-	})
-})
+	});
 /* end lich chieu*/
+/* scroll */
+	$('.subMenu ul li:nth-child(1)').click(function () {
+		$('body,html').animate({scrollTop:0}, 900);
+	});
+	$('.subMenu ul li:nth-child(2)').click(function () {
+		$('body,html').animate({scrollTop:1500}, 900);
+	});
+	$('.subMenu ul li:nth-child(3)').click(function () {
+		$('body,html').animate({scrollTop:700}, 900);
+	});
+
+/* end scroll*/
+});
