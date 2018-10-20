@@ -220,8 +220,6 @@ $(function(){
 	$('.subMenu ul li:nth-child(3)').click(function () {
 		$('body,html').animate({scrollTop:700}, 900);
 	});
-	$('.ticket').click(function() {
-		$('body,html').animate({scrollTop:1000}, 900);
-	});
+
 
 /* end scroll*/
