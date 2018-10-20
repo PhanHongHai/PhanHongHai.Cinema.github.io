@@ -92,3 +92,56 @@ $(function(){
 	});
 });
 /* end search bar*/
+/*Move tab*/
+var buttons = document.getElementsByClassName('tablinks');
+var contents = document.getElementsByClassName('tab_1');
+$(function(){
+function showContent(id){
+		for (var i = 0; i < contents.length; i++) {
+			contents[i].style.display = 'none';
+		}
+		var content = document.getElementById(id);
+		content.style.display = 'block';
+	}
+	for (var i = 0; i < buttons.length; i++) {
+		buttons[i].addEventListener("click", function(){
+			var id = this.textContent;
+			for (var i = 0; i < buttons.length; i++) {
+				buttons[i].classList.remove("active");
+			}
+			this.className += " active";
+			showContent(id);
+		});
+	}
+	showContent('LỊCH CHIẾU');
+});
+/*End Move Tab*/
+/*Choice Day*/
+$(function(){
+	var day = document.getElementsByClassName('date_list');
+
+	for (var i = 0; i < day.length; i++) {
+		day[i].addEventListener("click", function(){
+			for (var i = 0; i < day.length; i++) {
+				day[i].classList.remove("active");
+			}
+			this.className += " active";
+		});
+	}
+	});
+/*End CHoice Day*/
+/*Choice Time*/
+$(function(){
+	var time = document.getElementsByClassName('time');
+
+	for (var i = 0; i < time.length; i++) {
+		time[i].addEventListener("click", function(){
+			for (var i = 0; i < time.length; i++) {
+				time[i].classList.remove("active");
+			}
+			this.className += " active";
+		});
+	}
+
+});
+/*End Choice Time*/
