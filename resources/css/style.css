@@ -276,6 +276,7 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
 		margin: 0 auto;
 		margin-top: 50px;
 		box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.298039215686275);
+		overflow-x: auto;
 	}
 	.rap{
 		color: white;
@@ -284,7 +285,7 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
 		border-bottom: solid gray 2px;
 		margin-right: 30px;
 		padding-top: 10px;
-		overflow-x: auto;
+
 
 	}
 	.rap .name{
