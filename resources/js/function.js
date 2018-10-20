@@ -34,6 +34,26 @@ $(function(){
 		/*end slide*/
 	})
 });
+
+/* menu scroll*/
+$(function(){
+	$(window).scroll(function(event) {
+		var vitri=$("html").scrollTop();
+		console.log(vitri);
+		if(vitri > 90){
+			$('.allMenu').addClass('allMenuZoom');
+			$('.menu').addClass('menuZoom');
+			$('.searchBar').addClass('searchZoom');
+		}
+		else if(vitri < 100){
+			$('.allMenu').removeClass('allMenuZoom');
+			$('.menu').removeClass('menuZoom');
+			$('.searchBar').removeClass('searchZoom');
+		}
+	});
+})
+/* end menu scroll */
+
 /* hover slide*/
 $(function(){
 	$('.slideChild').hover(function(){
