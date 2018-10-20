@@ -223,3 +223,20 @@ $(function(){
 
 
 /* end scroll*/
+<<<<<<< HEAD
+=======
+/* show so ghe*/
+$('.dateTimeMovie ul li a').click(function() {
+	/* Act on the event */
+	$('.numberGhe').removeClass('hideNumberGhe');
+	$('.numberGhe').addClass('showNumberGhe');
+});
+$('.numberGhe').before().click(function() {
+	/* Act on the event */
+	console.log("sds");
+	$('.numberGhe').removeClass('showNumberGhe');
+	$('.numberGhe').addClass('hideNumberGhe');
+});
+/* end  show so ghe*/
+});
+>>>>>>> Hai
