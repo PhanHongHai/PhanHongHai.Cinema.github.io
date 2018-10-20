@@ -1,6 +1,8 @@
 /* move slide Image*/
 var value=0,count=0,kiemTraSearch=0;
 var x,urlImg;
+var buttons = document.getElementsByClassName('tablinks');
+var contents = document.getElementsByClassName('tab_1');
 $(function(){
 	$('.nutRight').click(function(){
 		var getBanner=document.getElementById("banner");
@@ -104,14 +106,13 @@ $(function(){
 			kiemTraSearch =temp;
 		}
 	});
-<<<<<<< HEAD
+
 });
 /* end search bar*/
-<<<<<<< HEAD
+
 /*Move tab*/
-var buttons = document.getElementsByClassName('tablinks');
-var contents = document.getElementsByClassName('tab_1');
-$(function(){
+
+
 function showContent(id){
 		for (var i = 0; i < contents.length; i++) {
 			contents[i].style.display = 'none';
@@ -130,10 +131,10 @@ function showContent(id){
 		});
 	}
 	showContent('LỊCH CHIẾU');
-});
+
 /*End Move Tab*/
 /*Choice Day*/
-$(function(){
+
 	var day = document.getElementsByClassName('date_list');
 
 	for (var i = 0; i < day.length; i++) {
@@ -144,10 +145,10 @@ $(function(){
 			this.className += " active";
 		});
 	}
-	});
+
 /*End CHoice Day*/
 /*Choice Time*/
-$(function(){
+
 	var time = document.getElementsByClassName('time');
 
 	for (var i = 0; i < time.length; i++) {
@@ -159,17 +160,18 @@ $(function(){
 		});
 	}
 
-});
+
 /*End Choice Time*/
-=======
+
 /* content movie*/
+
 $(function(){
-=======
+
 
 	/* end search bar*/
 	/* content movie*/
 
->>>>>>> Hai
+
 	$('.catetory ul li a').click(function(){
 		$('.catetory ul li a').removeClass('vien');
 		$(this).addClass('vien');
@@ -186,13 +188,13 @@ $(function(){
 		$('.cateMove:nth-child('+(movieIndex)+')').addClass('movieLeft');
 		$('.cateMove:nth-child('+(movieIndex+1)+')').addClass('movieRight');
 
-<<<<<<< HEAD
+
 	})
-})
+
 /* end content movie*/
->>>>>>> master
-=======
-	});
+
+
+
 
 	/* end content movie*/
 	/* lich chieu*/
@@ -226,4 +228,4 @@ $(function(){
 
 /* end scroll*/
 });
->>>>>>> Hai
+
