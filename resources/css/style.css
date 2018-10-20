@@ -55,9 +55,6 @@ header .layerCha .slideImg .slideChild .ndPhim a{text-decoration: none;color: wh
 header .layerCha .slideImg .slideChild .ndPhim h3{    font-family: ubuntu, sans-serif; font-size: 27px;}
 header .layerCha .slideImg .slideChild .ndPhim h4{font-family: ubuntu, sans-serif; font-size: 15px;}
 header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
-
-
-
 /*  menu  */
 .allMenu{    position: fixed;width: 100%;height: 120px;z-index: 3;}
 .allMenuZoom{z-index: 5;}
@@ -77,11 +74,8 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
 .menu .logIn:hover{opacity: 1;}
 .menuZoom{position: fixed;transition: 0.8s;height: 80px;}
 .menuZoom .tong{margin-top: 1%;}
-
 .searchBar{z-index: 1;display: block; box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);background-color: #2b2b31; position: absolute;top: 46%;width: 100%;height: 60px;border-top: 1px solid rgba(255,255,255,0.05);}
-
 /*  end menu */
-
 /*  search bar */
 .searchBar form input{height: 60px;width: 100%; border: none;background-color: #28282d; text-indent: 22px; color: white;position: relative;}
 .searchBar form{width: 100%;}
@@ -96,11 +90,9 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
 @-webkit-keyframes hideSearch{0%{top: 100%;} 100%{top: 46%;}}
 @-webkit-keyframes showSearchZoom{0%{top: 16%;z-index: 1;} 100%{top: 67%;z-index: 1;}}
 @-webkit-keyframes hideSearchZoom{0%{top: 67%;} 100%{top: 16%;}}
-
 /* end search */
 /*  end header */
 /* part 2 */
-
 .part2 .listMovies{     z-index: 3;   width: 100%;height: 139px;background: #28282d;color: #CCCCCC;box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);font-family: ubuntu;position: relative;}
 .part2 .listMovies:before{content: '';position: absolute;top: 0;left: 0;width: 100%;height: 2px;    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);}
 .part2 .listMovies h1{    font-size: 35px;padding-top: 50px;    padding-left: 65px;color: white;}
@@ -111,7 +103,7 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
 .part2 .contentPart2{    width: 100%;position: relative; background-color: #2b2b31;height: 700px;}
 .part2 .contentPart2 .cateMove{   position: absolute; top: 6%;left: 8%;opacity: 0;visibility: hidden;}
 .part2 .contentPart2 .cateMove .movie{ text-align: center;position: relative;}
-.part2 .contentPart2 .cateMove .movie h3 a, .part2 .contentPart2 .cateMove .movie h4 a{font-family: ubuntu;text-decoration: none;}
+.part2 .contentPart2 .cateMove .movie h3 a, .part2 .contentPart2 .cateMove .movie h4 a{font-family: ubuntu;text-decoration;}
 .part2 .contentPart2 .cateMove .movie h3 a{    font-size: 18px;color: #fff; margin: 0;}
 .part2 .contentPart2 .cateMove .movie h4 a{    font-size: 14px;color: #FF5860; margin: 0;}
 .part2 .contentPart2 .movieActive{opacity: 1;visibility: visible; color: #fff;}
@@ -123,7 +115,7 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
 /*  lich chieu */
 .lichChieu{    width: 100%;height: 700px;position: relative;}
 .lichChieu img{height: 700px;}
-.lichChieu .formLichChieu{width: 72%;height: 300px;position: absolute;top: 12%;left: 15%;color: white;}
+.lichChieu .formLichChieu{width: 72%;height: 300px;position: absolute;top: 12%;left: 14%;color: white;}
 .lichChieu .formLichChieu .dateTime{box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);height: 80px;background: #312f2f59;}
 .lichChieu .formLichChieu .dateTime .nameRap{margin-left: 34%;margin-top: 6%;width: 77%;border-right: 1px solid #FF5860;}
 .lichChieu .formLichChieu .dateTime .day ul li{list-style: none;float: left;color: #928e8e;    cursor: pointer;margin-left: 40px;}
@@ -143,4 +135,31 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
 .lichChieu .formLichChieu .suatChieu .lichMovies ul li .dateTimeMovie ul li{list-style: none;display: inline-block;    display: inline-block;margin-left: 27%;}
 .lichChieu .formLichChieu .suatChieu .lichMovies ul li .dateTimeMovie ul li a{transition: 0.3s;text-decoration: none;    color: #35de33;font-size: 30px;cursor: pointer;}
 .lichChieu .formLichChieu .suatChieu .lichMovies ul li .dateTimeMovie ul li a:hover{ color: #b7ea91;}
+/*  so ghe */
+.lichChieu .numberGhe{width: 50%;height: 410px;position: absolute;top: 40%;left: 27%;background: #212529;}
+.lichChieu .numberGhe:before{content:'';background: url(../images/closeIcon.png);background: url(../images/closeIcon.png);width: 100px;height: 100px;position: absolute;right: -12%;top: -3%;background-size: 30px 30px;background-repeat: no-repeat;cursor: pointer;/* background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%); */}
+.lichChieu .numberGhe  h3{color: white;text-align: center;font-family: ubuntu;margin-top: 2%;}
+.lichChieu .numberGhe .manHinh{width: 60%;height: 5px;margin-left: 20%;background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);}
+.lichChieu .numberGhe .listGhe .dayA{    width: 100%;height: 35px;margin-top: 4%;}
+.lichChieu .numberGhe .listGhe .dayB,.lichChieu .numberGhe .listGhe .dayC,.lichChieu .numberGhe .listGhe .dayD,.lichChieu .numberGhe .listGhe .dayE{height: 35px;width: 100%;}
+.lichChieu .numberGhe .listGhe .seat{width: 25px;height: 25px;background: #e2dede;display: inline-block;border-radius: 3px;margin-right: 4px;cursor: pointer;}
+.lichChieu .numberGhe .listGhe h4{display: inline-block;color: #e6e2e2;font-size: 20px;margin-right: 16%;margin-left: 13%;width: 24px;}
+.lichChieu .numberGhe .infoSeat{    width: 100%;height: 45px; margin-top: 7%;color: #e6e2e2; }
+.lichChieu .numberGhe .infoSeat ul li{list-style: none;float: left;padding-left: 11%;}
+.lichChieu .numberGhe .infoSeat ul li span,.lichChieu .numberGhe .infoSeat ul li h5{display: inline-block;font-size: 15px;font-family: roboto;}
+.lichChieu .numberGhe .infoSeat ul li span{width: 20px;height: 20px;border-radius: 2px;}
+.lichChieu .numberGhe .infoSeat ul li span img{height: 14px;position: absolute;top: 18%;left: 16%;}
+.lichChieu .numberGhe .infoSeat ul li span#gheTrong{background: #e2dede;}
+.lichChieu .numberGhe .infoSeat ul li span#pickSeat{background: #58acf5;}
+.lichChieu .numberGhe .infoSeat ul li span#blockSeat{background: white;position: relative;}
+.lichChieu .numberGhe .nutDatve{transition: 0.5s;opacity: 0.85;width: 130px;height: 40px;background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);border-radius: 3px;margin: auto;}
+.lichChieu .numberGhe .nutDatve a{text-decoration: none;color: white;padding-top: 7px;padding-left: 14px;display: block;}
+.lichChieu .numberGhe .nutDatve:hover{opacity: 1;}
+/* end so ghe*/
+
+
+
+
 /*  end lich chieu */
+
+
