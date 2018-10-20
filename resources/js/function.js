@@ -107,7 +107,7 @@ $(function(){
 		}
 
 	});
-<<<<<<< HEAD
+
 	/* move tab !!!!*/
 	$('.menu_tab .tablinks').click(function() {
 		/* Act on the event */
@@ -119,8 +119,8 @@ $(function(){
 		$('.contentMovies1:nth-child('+(getIndexButtonTab+1)+')').css('display','block');
 	});
 	/* end movie tab !!!*/
-=======
->>>>>>> 091b6797641a2dc688fad2e45f87eef71a58b9fd
+
+
 });
 /* end search bar*/
 
@@ -149,7 +149,7 @@ $(function(){
 	*/
 	/*End Move Tab*/
 	/*Choice Day*/
-
+$(function(){
 	var day = document.getElementsByClassName('date_list');
 
 	for (var i = 0; i < day.length; i++) {
@@ -160,10 +160,11 @@ $(function(){
 			this.className += " active";
 		});
 	}
+	})
 
 	/*End CHoice Day*/
 	/*Choice Time*/
-
+$(function(){
 	var time = document.getElementsByClassName('time');
 
 	for (var i = 0; i < time.length; i++) {
@@ -174,22 +175,21 @@ $(function(){
 			this.className += " active";
 		});
 	}
+})
 
-<<<<<<< HEAD
-=======
-});
+
 /*End Choice Time*/
 
 /* content movie*/
 $(function(){
 
->>>>>>> 091b6797641a2dc688fad2e45f87eef71a58b9fd
+
 
 	/*End Choice Time*/
 
 	/* content movie*/
 
-<<<<<<< HEAD
+
 	$(function(){
 
 
@@ -209,7 +209,7 @@ $(function(){
 				$('.cateMove:nth-child('+(3)+')').addClass('movieLeft');
 				$('.cateMove:nth-child('+(movieIndex+1)+')').addClass('movieRight');
 			}
-=======
+
 
 	$('.catetory ul li a').click(function(){
 		$('.catetory ul li a').removeClass('vien');
@@ -219,19 +219,17 @@ $(function(){
 		$('.cateMove').removeClass('movieLeft');
 		$('.cateMove').removeClass('movieRight');
 		if(movieIndex == 0){
->>>>>>> 091b6797641a2dc688fad2e45f87eef71a58b9fd
+
 			$('.cateMove:nth-child('+(movieIndex+1)+')').addClass('movieActive');
 			$('.cateMove:nth-child('+(movieIndex)+')').addClass('movieLeft');
 			$('.cateMove:nth-child('+(movieIndex+1)+')').addClass('movieRight');
 
-<<<<<<< HEAD
-=======
 
-	})
+
+	}
 })
 /* end content movie*/
 
->>>>>>> 091b6797641a2dc688fad2e45f87eef71a58b9fd
 
 		})
 
@@ -273,8 +271,7 @@ $(function(){
 		/* end scroll*/
 	});
 
-<<<<<<< HEAD
-=======
+
 
 /* end scroll*/
 
@@ -290,7 +287,9 @@ $('.numberGhe').before().click(function() {
 	$('.numberGhe').removeClass('showNumberGhe');
 	$('.numberGhe').addClass('hideNumberGhe');
 });
+})
+
 /* end  show so ghe*/
 
 
->>>>>>> 091b6797641a2dc688fad2e45f87eef71a58b9fd
+
