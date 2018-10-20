@@ -104,10 +104,9 @@ $(function(){
 			kiemTraSearch =temp;
 		}
 	});
-<<<<<<< HEAD
 });
 /* end search bar*/
-<<<<<<< HEAD
+
 /*Move tab*/
 var buttons = document.getElementsByClassName('tablinks');
 var contents = document.getElementsByClassName('tab_1');
@@ -161,15 +160,15 @@ $(function(){
 
 });
 /*End Choice Time*/
-=======
+
 /* content movie*/
 $(function(){
-=======
+
 
 	/* end search bar*/
 	/* content movie*/
 
->>>>>>> Hai
+
 	$('.catetory ul li a').click(function(){
 		$('.catetory ul li a').removeClass('vien');
 		$(this).addClass('vien');
@@ -186,13 +185,11 @@ $(function(){
 		$('.cateMove:nth-child('+(movieIndex)+')').addClass('movieLeft');
 		$('.cateMove:nth-child('+(movieIndex+1)+')').addClass('movieRight');
 
-<<<<<<< HEAD
+
 	})
 })
 /* end content movie*/
->>>>>>> master
-=======
-	});
+
 
 	/* end content movie*/
 	/* lich chieu*/
@@ -225,5 +222,3 @@ $(function(){
 	});
 
 /* end scroll*/
-});
->>>>>>> Hai
