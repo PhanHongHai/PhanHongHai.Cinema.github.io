@@ -1,0 +1,211 @@
+*{
+
+}
+/*  reponsive  */
+/* end reponsive */
+/* import font  */
+@font-face{font-family:ubuntu; src:url('../font/unbutu/Ubuntu-Light.ttf') format('truetype'),url('../font/unbutu/Ubuntu-Regular.ttf') format('truetype'),url('../font/unbutu/Ubuntu-Medium.ttf') format('truetype');font-weight:normal;
+ font-style:normal;}
+@font-face{font-family: roboto; src:url('../font/roboto/Roboto-Regular.ttf') format('truetype'),url('../font/Roboto-Medium.ttf') format('truetype'),
+	url('../font/roboto/Roboto-Bold.ttf') format('truetype'),url('../font/roboto/Roboto-Light.ttf') format('truetype');font-weight:normal;font-style:normal;
+}
+/* end font */
+/*  header  */
+header{position: relative;}
+header .layerCha{width: 100%; position: relative;    overflow: hidden;}
+header .layerCha #banner{width: 100%;height: 750px;transition: 1.3s ease-in-out;}
+header .layerCha .layerChild{    width: 100%;height: 100%;position: absolute;top: 0;left: 0; background-color: #2b2b31c9;}
+header .layerCha .slide{position: absolute;top: 23%;left: 9%;color: white;width: 84%;}
+header .layerCha .slide .nutLeft span:before{content: '\2190';font-size: 40px;    color: #b1b1b5; transition: 0.3s; cursor: pointer;}
+header .layerCha .slide .nutRight span:before{content: '\2192';font-size: 40px;    color: #b1b1b5; transition: 0.3s; cursor: pointer;}
+header .layerCha .slide .nutLeft:hover span:before, header .layerCha .slide .nutRight:hover span:before{color: #fff;}
+header .layerCha .slide h1,header .layerCha .slide .nutLeft span:before,header .layerCha .slide .nutRight span:before {float: left;}
+header .layerCha .slide h1{padding-right: 60%;    font-family: roboto,sans-serif;}
+header .layerCha .slideCha{    top: 34%; position: absolute;left: 7%;width: 87%;}
+header .layerCha .slideCha .frame{ position: relative;   overflow: hidden;}
+header .layerCha .slideImg{    width: 2300px;height: 410px;}
+header .layerCha .slideImg .slideChild {float: left;padding-left: 1%; transition: 0.9s;    position: relative;    transform: translateX(0) scale(0.9);}
+header .layerCha .slideImg .kichHoatSlide {transform: scale(1) !important;}
+header .layerCha .slideImg .slideChild .play{    position: absolute;top: 37%;left: 44%;width:20%;z-index: 4;transition: 0.5s;opacity: 0;cursor: pointer;}
+header .layerCha .slideImg .slideChild .layerSlideChild{width: 270px;height: 400px;position: absolute;top: 0;opacity: 0; transition: 0.5s;    z-index: 2;}
+header .layerCha .slideImg .slideChild:hover .layerSlideChild{background: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%); opacity: 0.65;    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);}
+header .layerCha .slideImg .slideChild:hover .play{opacity: 1;}
+header .layerCha .slideImg .slideChild .ndPhim{text-align: center;}
+header .layerCha .slideImg .slideChild .ndPhim a{text-decoration: none;color: white;}
+header .layerCha .slideImg .slideChild .ndPhim h3{    font-family: ubuntu, sans-serif; font-size: 27px;}
+header .layerCha .slideImg .slideChild .ndPhim h4{font-family: ubuntu, sans-serif; font-size: 15px;}
+header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
+
+
+/*  menu  */
+.menu{    width: 100%;position: absolute;top: 0;left: 0;height: 90px; background-color: #2b2b31;    box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);    z-index: 2;
+}
+.menu h2 a{color: white;text-decoration: none;}
+.menu h2 a span{color: #ff5860 ;}
+.menu .logo, .menu .subMenu, .menu .search, .menu .logIn{float: left;}
+.menu .subMenu {    margin-top: 15px;}
+.menu .subMenu ul li{float: left;list-style: none;padding-left: 49px;}
+.menu .subMenu ul li a{transition: 0.5s;text-decoration: none;color: #fff;font-size: 14px;font-weight: 300; text-transform: uppercase; color: rgba(255,255,255,0.75);letter-spacing: 0.2px;}
+.menu .subMenu ul li a:hover{color: #ff55a5;}
+.menu .search{    display: block;margin-left: 26%;margin-top: 15px;}
+.menu .search img{width: 30px;height: 30px;cursor: pointer;}
+.menu .tong{    width: 100%;margin-top: 2%;}
+.menu .logIn{ transition: 0.4s;  ; margin-left: 4%;margin-top: 3px;width: 162px; height: 50px; background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%); opacity: 0.85; border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);}
+.menu .logIn a{color: #fff;text-decoration: none;    padding: 12px 40px;display: block;}
+.menu .logIn:hover{opacity: 1;}
+.searchBar{z-index: 1;display: block; box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);background-color: #2b2b31; position: absolute;top: 4%;width: 100%;height: 60px;border-top: 1px solid rgba(255,255,255,0.05);}
+
+/*  end menu */
+/*  search bar */
+.searchBar form input{height: 60px;width: 100%; border: none;background-color: #28282d; text-indent: 22px; color: white;position: relative;}
+.searchBar form{width: 100%;}
+.searchBar form button{  ;transition: 0.5s;  ;position: absolute; top: 20%;right: 6%;width: 90px;height: 40px;border: none;background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);opacity: 0.85;border-radius: 5px;color: white;}
+.searchBar form button:hover{opacity: 1;}
+header .showSearchBar{animation: showSearch 0.5s ;top: 12%;z-index: 3;}
+header .hideSearchBar{animation: hideSearch 0.5s ; top: 4%;}
+@-webkit-keyframes showSearch{0%{top: 4%;z-index: 1;} 100%{top: 12%;z-index: 1;}}
+@-webkit-keyframes hideSearch{0%{top: 12%;} 100%{top: 4%;}}
+
+/* end search */
+/*  end header */
+/* ----Đăng nhập start-----
+ */
+.cha{
+    position: relative;
+}
+.cha img.banner {
+    height: 657px;
+}
+form.form-dn{ 
+    width: 400px;
+    height: 450px; 
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    background: #28282d;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);
+}
+form:before {  
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-image: linear-gradient(to right, #ff55a5 0%, #ff5860 100%);
+    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+}
+form .img-nen{
+    margin-left: 21%;
+    margin-top: 10%;
+}
+form.form-dn .theInput{
+    text-indent: 20px;
+    margin-top: 6%;
+}
+form.form-dn input {
+    border: none;
+    background: #2b2b31;
+    width: 89%;
+    height: 50px;
+    text-indent: 20px;
+    color: white;
+}
+form.form-dn .nutSubmit {
+    margin-top: 15%;    
+    margin-left: 5%;
+}
+form.form-dn .nutSubmit input{
+    background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+    border-radius: 2%;
+    color: white;
+    text-indent: 0%;
+}
+.form-dn h1 {
+    font-size: 13px;
+    color: white;
+    text-indent: 21%;
+    position: absolute;
+    bottom: 10%;
+}
+h1 a:hover {
+    color: #FF5860;
+    text-decoration: none;
+    margin-left: 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+h1 a {
+     color: #FF5860;
+    text-decoration: none;
+    margin-left: 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+/* ----Đăng nhập end----*/
+
+/*-------Đăng ký start-------*/
+.cha{
+    position: relative;
+}
+.cha img.banner {
+    height: 657px;
+}
+form.form-dk{ 
+    width: 400px;
+    height: 580px; 
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    background: #28282d;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);
+}
+form:before {  
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-image: linear-gradient(to right, #ff55a5 0%, #ff5860 100%);
+    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+}
+form .img-nen{
+    margin-left: 21%;
+    margin-top: 5%;
+}
+form.form-dk input {
+    border: none;
+    background: #2b2b31;
+    width: 89%;
+    height: 50px;
+    text-indent: 10px;
+    color: white;
+}
+form.form-dk .theInput{
+    text-indent: 20px;
+    margin-top: 3%;
+}
+form.form-dk .theInput1 {
+    text-indent: 20px;
+    margin-top: 3%;
+    width: 100%;
+}
+form.form-dk .theInput2 {
+    text-indent: -2%;
+    margin-top: 3%;
+    width: 100%;
+}
+
+form.form-dk .nutSubmit {
+    margin-top: 5%;    
+    margin-left: 5%;
+}
+form.form-dk .nutSubmit input{
+    background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+    border-radius: 2%;
+    color: white;
+    text-indent: 0%;
+}
+/*-------Đăng ký end-------*/
