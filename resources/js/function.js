@@ -223,8 +223,7 @@ $(function(){
 
 
 /* end scroll*/
-<<<<<<< HEAD
-=======
+
 /* show so ghe*/
 $('.dateTimeMovie ul li a').click(function() {
 	/* Act on the event */
@@ -238,5 +237,5 @@ $('.numberGhe').before().click(function() {
 	$('.numberGhe').addClass('hideNumberGhe');
 });
 /* end  show so ghe*/
-});
->>>>>>> Hai
+
+
