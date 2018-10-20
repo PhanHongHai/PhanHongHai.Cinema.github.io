@@ -70,7 +70,7 @@
 			<span class="age">C18</span>
 			<span class="tit">Venom</span>
 			<br>
-			<span class="time">100 phút</span>
+			<span class="times">100 phút</span>
 			<br>
 			<span class="theloai">Hành động, Kinh dị, Siêu nhiên</span>
 			<br>
@@ -220,31 +220,31 @@
 </script>
 
 <script type="text/javascript">
-        var day = document.getElementsByClassName('date_list');
-        
-        for (var i = 0; i < day.length; i++) {
-            day[i].addEventListener("click", function(){
-                for (var i = 0; i < day.length; i++) {
-                    day[i].classList.remove("active");
-                }
-                this.className += " active";
-            });
-        }
-    
-    </script>
+	var day = document.getElementsByClassName('date_list');
+	
+	for (var i = 0; i < day.length; i++) {
+		day[i].addEventListener("click", function(){
+			for (var i = 0; i < day.length; i++) {
+				day[i].classList.remove("active");
+			}
+			this.className += " active";
+		});
+	}
+	
+</script>
 
-    <script type="text/javascript">
-        var time = document.getElementsByClassName('time');
-        
-        for (var i = 0; i < time.length; i++) {
-            time[i].addEventListener("click", function(){
-                for (var i = 0; i < time.length; i++) {
-                    time[i].classList.remove("active");
-                }
-                this.className += " active";
-            });
-        }
-    
-    </script>
+<script type="text/javascript">
+	var time = document.getElementsByClassName('time');
+	
+	for (var i = 0; i < time.length; i++) {
+		time[i].addEventListener("click", function(){
+			for (var i = 0; i < time.length; i++) {
+				time[i].classList.remove("active");
+			}
+			this.className += " active";
+		});
+	}
+	
+</script>
 </body>
 </html>
