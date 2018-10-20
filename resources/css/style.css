@@ -68,9 +68,9 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
 .menu .subMenu ul li a:hover{color: #ff55a5;}
 .menu .search{    display: block;margin-left: 26%;margin-top: 15px;}
 .menu .search img{width: 30px;height: 30px;cursor: pointer;}
-<<<<<<< HEAD
+
 .menu .tong{    width: 100%;margin-top: 2%;}
-<<<<<<< HEAD
+
 .menu .logIn{ transition: 0.4s;  ; margin-left: 4%;margin-top: 3px;width: 162px; height: 50px; background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%); opacity: 0.85; border-radius: 5px;
 	box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);}
 	.menu .logIn a{color: #fff;text-decoration: none;    padding: 12px 40px;display: block;}
@@ -332,10 +332,9 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
 	}
 
 /* ---------------------------------------------- Kết thúc: Phần Chi Tiết Phim ---------------------------------*/
-=======
-=======
+
 .menu .tong{width: 100%;margin-top: 3%;    transition: 0.5s;}
->>>>>>> Hai
+
 .menu .logIn{ transition: 0.4s;  ; margin-left: 4%;margin-top: 3px;width: 162px; height: 50px; background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%); opacity: 0.85; border-radius: 5px;box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);}
 .menu .logIn a{color: #fff;text-decoration: none;    padding: 12px 40px;display: block;}
 .menu .logIn:hover{opacity: 1;}
@@ -430,13 +429,11 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
 /*  end lich chieu */
 
 
-<<<<<<< HEAD
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
    background:linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
    opacity: 1;
 }
 /*  end lich chieu */
->>>>>>> master
-=======
->>>>>>> Hai
+
