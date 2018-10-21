@@ -183,7 +183,7 @@ header .header1 ul li h5{color: white;cursor: pointer;font-family: ubuntu;font-s
 header .header1 ul li h5.choseShow:before{content: '';position: absolute;bottom: -15px;height: 2px;display: block;background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);width: 10%;box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);}
 .datVePart2{width: 100%;overflow: hidden;z-index: 2;}
 .noiDungDV{width: 2000px;height: 565px;position: relative;}
-.noiDungDV #benTrai{width: 17%;height: 100%;float: left;background: red;position: relative;}
+.noiDungDV #benTrai{width: 17%;height: 100%;float: left;position: relative;}
 .noiDungDV #mid{width: 52%;height: 100%;float: left;background: blue;position: relative;}
 .noiDungDV #benPhai{width: 325px;height: 100%;background: yellow;position: relative;float: left;}
 .noiDungDV #mid #tongTien{    width: 66%;height: 100px;background: green;margin: auto;    position: relative;}
