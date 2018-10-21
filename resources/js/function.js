@@ -145,8 +145,8 @@ $(function(){
 		$(this).css('color','#fff');
 
 	});
-/* end lich chieu*/
-/* scroll */
+	/* end lich chieu*/
+	/* scroll */
 	$('.subMenu ul li:nth-child(1)').click(function () {
 		$('body,html').animate({scrollTop:0}, 900);
 	});
@@ -157,40 +157,42 @@ $(function(){
 		$('body,html').animate({scrollTop:700}, 900);
 	});
 
-/* end scroll*/
-/* show so ghe*/
-$('.dateTimeMovie ul li a').click(function() {
-	/* Act on the event */
-	$('.numberGhe').removeClass('hideNumberGhe');
-	$('.numberGhe').addClass('showNumberGhe');
-});
-$('.numberGhe').before().click(function() {
-	/* Act on the event */
-	console.log("sds");
-	$('.numberGhe').removeClass('showNumberGhe');
-	$('.numberGhe').addClass('hideNumberGhe');
-});
-/* end  show so ghe*/
+	/* end scroll*/
+	/* show so ghe*/
+	$('.dateTimeMovie ul li a').click(function() {
+		/* Act on the event */
+		$('.numberGhe').removeClass('hideNumberGhe');
+		$('.numberGhe').addClass('showNumberGhe');
+	});
+	$('.numberGhe').before().click(function() {
+		/* Act on the event */
+		console.log("sds");
+		$('.numberGhe').removeClass('showNumberGhe');
+		$('.numberGhe').addClass('hideNumberGhe');
+	});
+	/* end  show so ghe*/
 
 
-/* dat ve*/
+	/* dat ve*/
 
-$('.nutDatVe').click(function(){
-	$('.header1 ul li').removeClass('choseShow');
-	$('.header1 ul li:nth-child(1)').addClass('choseShow');
-	$('.partChildDV').removeClass('diSangPhai');
-	$('.partChildDV').addClass('diSangTrai');
-	$('.chonGhe').removeClass('hideDatGhePartDV');
-	$('.chonGhe').addClass('showChonGhePartDV');
-});
-$('.header1 ul li h5:nth-child(1)').click(function(){
-	$('.partChildDV').removeClass('diSangTrai');
-	$('.partChildDV').addClass('diSangPhai');
-	$('.chonGhe').removeClass('showChonGhePartDV');
-	$('.chonGhe').addClass('hideDatGhePartDV');
-})
-/* end dat ve*/
+	$('.nutDatVe').click(function(){
+		$('.header1 ul li').removeClass('choseShow');
+		$('.header1 ul li:nth-child(1)').addClass('choseShow');
+		$('.partChildDV').removeClass('diSangPhai');
+		$('.partChildDV').addClass('diSangTrai');
+		$('.chonGhe').removeClass('hideDatGhePartDV');
+		$('.chonGhe').addClass('showChonGhePartDV');
+	});
+	$('.header1 ul li h5:nth-child(1)').click(function(){
+		$('.partChildDV').removeClass('diSangTrai');
+		$('.partChildDV').addClass('diSangPhai');
+		$('.chonGhe').removeClass('showChonGhePartDV');
+		$('.chonGhe').addClass('hideDatGhePartDV');
+	})
+	/* end dat ve*/
 
+	/* admin*/
 
-/* end function*/
+	/* end admin*/
+	/* end function*/
 });

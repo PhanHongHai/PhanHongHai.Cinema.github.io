@@ -52,23 +52,23 @@
 
 						<li>
 							<a href=""><i class=" mdi mdi-account-circle" ></i> <span> Quản Lý Nhân Viên </span> <span class="menu-arrow"></span></a>
-							<ul class="nav-second-level" aria-expanded="false">
+							<ul class="nav-second-level nhanVien" aria-expanded="false">
 								<li><a href="">Thêm mới</a></li>
-								<li><a href="">Danh Sách nhân viên</a></li>
+								<li><a href="">Edit nhân viên</a></li>
 							</ul>
 						</li>
 						<li>
 							<a href=""><i class="fi-align-justify" ></i><span> QL Thông Tin Rạp </span> <span class="menu-arrow"></span></a>
 							<ul class="nav-second-level" aria-expanded="false">
 								<li><a href="">Thêm mới</a></li>
-								<li><a href="">Danh sách Rạp phim</a></li>
+								<li><a href="">Edit Rạp phim</a></li>
 							</ul>
 						</li>
 						<li>
 							<a href=""><i class="mdi mdi-apps" ></i><span> QL Phòng Chiếu </span> <span class="menu-arrow"></span></a>
 							<ul class="nav-second-level" aria-expanded="false">
 								<li><a href="">Thêm mới</a></li>
-								<li><a href="">Danh sách Rạp phim</a></li>
+								<li><a href="">Edit Rạp phim</a></li>
 							</ul>
 						</li>
 
@@ -76,7 +76,7 @@
 							<a href=""><i class="fi-layout"></i><span> Quản Lý Phim </span> <span class="menu-arrow"></span></a>
 							<ul class="nav-second-level" aria-expanded="false">
 								<li><a href="">Thêm mới</a></li>
-								<li><a href="">Danh Sách Phim</a></li>
+								<li><a href="">Edit Phim</a></li>
 							</ul>
 						</li>
 
@@ -198,7 +198,7 @@
 																<input type="text" class="form-control" placeholder="pass">
 															</div>
 														</div>
-														 <button type="submit" class="btn btn-primary text-center" style="margin: auto;display: block;">Them</button>
+														<button type="submit" class="btn btn-primary text-center" style="margin: auto;display: block;">Them</button>
 													</form>
 												</div>
 											</div>
@@ -207,6 +207,7 @@
 								</div>
 								<div class="card-box">
 									<div class="DanhSach">
+										<h4 class="m-t-0 header-title text-center">Danh sach nhan vien</h4>
 										<div class="card-box table-responsive">
 											<table id="datatable" class="table table-bordered">
 												<thead>
@@ -267,7 +268,64 @@
 							</div>
 							<div class="qlNhanVien2">
 								<div class="edit">
-									
+									<div class="card-box">
+										<h4 class="m-t-0 header-title text-center">Danh sach nhan vien</h4>
+										<div class="card-box table-responsive">
+											<table id="datatable1" class="table table-bordered">
+												<thead>
+													<tr>
+														<th>ID</th>
+														<th>Tên</th>
+														<th>Giới Tính</th>
+														<th>Tài khoản</th>
+														<th>Mật Khẩu</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Tiger Nixon</td>
+														<td>System Architect</td>
+														<td>Edinburgh</td>
+														<td>Edinburgh</td>
+														<td>Edinburgh</td>
+
+													</tr>
+													<tr>
+														<td>Garrett Winters</td>
+														<td>Accountant</td>
+														<td>Tokyo</td>
+														<td>Tokyo</td>
+														<td>Tokyo</td>
+
+													</tr>
+													<tr>
+														<td>Ashton Cox</td>
+														<td>Junior Technical Author</td>
+														<td>San Francisco</td>
+														<td>San Francisco</td>
+														<td>San Francisco</td>
+
+													</tr>
+													<tr>
+														<td>Michael Bruce</td>
+														<td>Javascript Developer</td>
+														<td>Singapore</td>
+														<td>Singapore</td>
+														<td>Singapore</td>
+
+													</tr>
+													<tr>
+														<td>Donna Snider</td>
+														<td>Customer Support</td>
+														<td>New York</td>
+														<td>New York</td>
+														<td>New York</td>
+
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -336,7 +394,7 @@
 
                 // Default Datatable
                 $('#datatable').DataTable();
-
+                $('#datatable1').DataTable();
                 //Buttons examples
                 var table = $('#datatable-buttons').DataTable({
                 	lengthChange: false,
