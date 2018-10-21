@@ -170,4 +170,26 @@ $('.numberGhe').before().click(function() {
 	$('.numberGhe').addClass('hideNumberGhe');
 });
 /* end  show so ghe*/
+
+
+/* dat ve*/
+
+$('.nutDatVe').click(function(){
+	$('header .header1 ul li h5').removeClass('choseShow');
+	$('header .header1 ul li h5:nth-child(1)').addClass('choseShow');
+	$('.partChildDV').removeClass('diSangPhai');
+	$('.partChildDV').addClass('diSangTrai');
+		$('.chonGhe').removeClass('hideDatGhePartDV');
+	$('.chonGhe').addClass('showChonGhePartDV');
+});
+$('header .header1 ul li h5:nth-child(1)').click(function(){
+	$('.partChildDV').removeClass('diSangTrai');
+	$('.partChildDV').addClass('diSangPhai');
+	$('.chonGhe').removeClass('showChonGhePartDV');
+	$('.chonGhe').addClass('hideDatGhePartDV');
+})
+/* end dat ve*/
+
+
+/* end function*/
 });
