@@ -1,6 +1,7 @@
 /* move slide Image*/
 var value=0,count=0,kiemTraSearch=0;
 var x,urlImg;
+
 $(function(){
 	$('.nutRight').click(function(){
 		var getBanner=document.getElementById("banner");

@@ -9,7 +9,7 @@
 	<link href="resources/css/icons.css" rel="stylesheet" type="text/css" />
 	<link href="resources/css/metismenu.min.css" rel="stylesheet" type="text/css" />
 	<link href="resources/css/style_dark.css" rel="stylesheet" type="text/css" />
-
+	<link href="resources/css/style.css" rel="stylesheet" type="text/css" />
 	<script src="resources/js/modernizr.min.js"></script>
 </head>
 <body>
@@ -81,7 +81,7 @@
 						</li>
 
 						<li>
-							<a href=""><i class="fi-briefcase"></i> <span>Danh Sách Vé </span> <span class="menu-arrow"></span></a>
+							<a href=""><i class="fi-briefcase"></i> <span>Danh Sách Vé </span></span></a>
 						</li>
 						<li>
 							<a href=""><i class="fi-bar-graph-2"></i><span> Thống Kê </span></span></a>
@@ -119,7 +119,7 @@
 						<li class="dropdown notification-list">
 							<a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="#" role="button"
 							aria-haspopup="false" aria-expanded="false">
-							<img src="resources/images/avatar-1.jpg" alt="user" class="rounded-circle"> <span class="ml-1">Maxine K <i class="mdi mdi-chevron-down"></i> </span>
+							<img src="resources/images/avatar-1.jpg" alt="user" class="rounded-circle"> <span class="ml-1">Admin <i class="mdi mdi-chevron-down"></i> </span>
 						</a>
 						<div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown ">
 							<!-- item-->
@@ -145,7 +145,11 @@
 							<i class="dripicons-menu"></i>
 						</button>
 					</li>
-
+					<li>
+						<div class="page-title-box">
+							<h4 class="page-title">Dark Menu </h4>
+						</div>
+					</li>
 
 				</ul>
 
@@ -159,19 +163,117 @@
 		<!-- Start Page content -->
 		<div class="content">
 			<div class="container-fluid">
-
 				<div class="row">
 					<div class="col-12">
-						<div class="card-box">
-							<h4 class="header-title mb-4">Account Overview</h4>
+						<div class="QlNhanVien">
+							<div class="qlNhanVien1">
+								<div class="card-box">
+									<div class="themMoi">
+										<h4 class="m-t-0 header-title text-center">Them nhan vien</h4>
+										<div class="row">
+											<div class="col-12">
+												<div class="p-20">
+													<form class="form-horizontal" role="form">
+														<div class="form-group row">
+															<label class="col-2 col-form-label">Ten nhan vien</label>
+															<div class="col-10">
+																<input type="text" class="form-control" placeholder="name">
+															</div>
+														</div>
+														<div class="form-group row">
+															<label class="col-2 col-form-label">Gioi tinh</label>
+															<div class="col-10">
+																<input type="text" class="form-control" placeholder="gioi tinh">
+															</div>
+														</div>
+														<div class="form-group row">
+															<label class="col-2 col-form-label">Tai khoan</label>
+															<div class="col-10">
+																<input type="text" class="form-control" placeholder="username">
+															</div>
+														</div>
+														<div class="form-group row">
+															<label class="col-2 col-form-label">Mat Khau</label>
+															<div class="col-10">
+																<input type="text" class="form-control" placeholder="pass">
+															</div>
+														</div>
+														 <button type="submit" class="btn btn-primary text-center" style="margin: auto;display: block;">Them</button>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="card-box">
+									<div class="DanhSach">
+										<div class="card-box table-responsive">
+											<table id="datatable" class="table table-bordered">
+												<thead>
+													<tr>
+														<th>ID</th>
+														<th>Tên</th>
+														<th>Giới Tính</th>
+														<th>Tài khoản</th>
+														<th>Mật Khẩu</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>Tiger Nixon</td>
+														<td>System Architect</td>
+														<td>Edinburgh</td>
+														<td>Edinburgh</td>
+														<td>Edinburgh</td>
 
+													</tr>
+													<tr>
+														<td>Garrett Winters</td>
+														<td>Accountant</td>
+														<td>Tokyo</td>
+														<td>Tokyo</td>
+														<td>Tokyo</td>
 
-							<!-- end row -->
+													</tr>
+													<tr>
+														<td>Ashton Cox</td>
+														<td>Junior Technical Author</td>
+														<td>San Francisco</td>
+														<td>San Francisco</td>
+														<td>San Francisco</td>
+
+													</tr>
+													<tr>
+														<td>Michael Bruce</td>
+														<td>Javascript Developer</td>
+														<td>Singapore</td>
+														<td>Singapore</td>
+														<td>Singapore</td>
+
+													</tr>
+													<tr>
+														<td>Donna Snider</td>
+														<td>Customer Support</td>
+														<td>New York</td>
+														<td>New York</td>
+														<td>New York</td>
+
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="qlNhanVien2">
+								<div class="edit">
+									
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<!-- end row -->
-
 			</div> <!-- container -->
 
 		</div> <!-- content -->
@@ -197,6 +299,7 @@
 
 
 <!-- jQuery  -->
+<script src="resources/js/function.js"></script>
 <script src="resources/js/jquery.min.js"></script>
 <script src="resources/js/popper.min.js"></script>
 <script src="resources/js/bootstrap.min.js"></script>
@@ -204,19 +307,76 @@
 <script src="resources/js/waves.js"></script>
 <script src="resources/js/jquery.slimscroll.js"></script>
 
+
+<!-- Required datatable js -->
+<script src="resources/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="resources/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+<!-- Buttons examples -->
+<script src="resources/plugins/datatables/dataTables.buttons.min.js"></script>
+<script src="resources/plugins/datatables/buttons.bootstrap4.min.js"></script>
+<script src="resources/plugins/datatables/jszip.min.js"></script>
+<script src="resources/plugins/datatables/pdfmake.min.js"></script>
+<script src="resources/plugins/datatables/vfs_fonts.js"></script>
+<script src="resources/plugins/datatables/buttons.html5.min.js"></script>
+<script src="resources/plugins/datatables/buttons.print.min.js"></script>
+
+<!-- Key Tables -->
+<script src="resources/plugins/datatables/dataTables.keyTable.min.js"></script>
+
+<!-- Responsive examples -->
+<script src="resources/plugins/datatables/dataTables.responsive.min.js"></script>
+<script src="resources/plugins/datatables/responsive.bootstrap4.min.js"></script>
+
+<!-- Selection table -->
+<script src="resources/plugins/datatables/dataTables.select.min.js"></script>
 <!-- Flot chart -->
 
-<!-- KNOB JS -->
+<script type="text/javascript">
+	$(document).ready(function() {
+
+                // Default Datatable
+                $('#datatable').DataTable();
+
+                //Buttons examples
+                var table = $('#datatable-buttons').DataTable({
+                	lengthChange: false,
+                	buttons: ['copy', 'excel', 'pdf']
+                });
+
+                // Key Tables
+
+                $('#key-table').DataTable({
+                	keys: true
+                });
+
+                // Responsive Datatable
+                $('#responsive-datatable').DataTable();
+
+                // Multi Selection Datatable
+                $('#selection-datatable').DataTable({
+                	select: {
+                		style: 'multi'
+                	}
+                });
+
+                table.buttons().container()
+                .appendTo('#datatable-buttons_wrapper .col-md-6:eq(0)');
+            } );
+
+        </script>
+
+
+        <!-- KNOB JS -->
         <!--[if IE]>
         <script type="text/javascript" src="resources/plugins/jquery-knob/excanvas.js"></script>
     <![endif]-->
     <script src="resources/plugins/jquery-knob/jquery.knob.js"></script>
 
     <!-- Dashboard Init -->
-    <script src="resources/pages/jquery.dashboard.init.js"></script>
-
-    <!-- App js -->
-    <script src="resources/js/jquery.core.js"></script>
-    <script src="resources/js/jquery.app.js"></script>
+   <!--  <script src="resources/pages/jquery.dashboard.init.js"></script>
+   -->
+   <!-- App js -->
+   <script src="resources/js/jquery.core.js"></script>
+   <script src="resources/js/jquery.app.js"></script>
 </body>
 </html>
