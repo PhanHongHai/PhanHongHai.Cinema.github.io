@@ -295,4 +295,10 @@ header .header1 ul li h5.choseShow:before{content: '';position: absolute;bottom:
 @-webkit-keyframes hideDatGhePartDV{0%{opacity: 1;visibility: visible;transform: translateX(0px);} 100%{opacity: 0;visibility: hidden;transform: translateX(1223PX);}
 /*  end page dat ve */
 
-
+/*  admin   */
+.content{position: relative;}
+.content-page .content .QlNhanVien{    width: 100%;
+    height: 880px;
+    position: relative;}
+.qlNhanVien1,.qlNhanVien2{position: absolute;top: 0;left: 0;}
+/* end admin */
