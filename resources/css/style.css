@@ -195,37 +195,37 @@ header .header1 ul li h5.choseShow:before{content: '';position: absolute;bottom:
 }
 
 .noiDungDV #benTrai .back{
-	    cursor: pointer;
-    position: absolute;
-    top: 45px;
-    height: 30px;
-    width: 65px;
-    padding-top: 2px;
-    text-align: center;
-    border-right: 1px solid #fff;
+	cursor: pointer;
+	position: absolute;
+	top: 45px;
+	height: 30px;
+	width: 65px;
+	padding-top: 2px;
+	text-align: center;
+	border-right: 1px solid #fff;
 }
 #benTrai .info_bentrai{
-top: 17%;
-    position: fixed;
-    left: 8%;
-    color: white;
+	top: 17%;
+	position: fixed;
+	left: 8%;
+	color: white;
 }
 #benTrai .age1{
 	margin-right: 7px;
-    padding-bottom: 0;
-    font-size: 16px;
-    background-color: #fb4226;
-    padding: 0 5px;
-    color: #fff;
-    border-radius: 4px;
-    text-align: center;
-    vertical-align: 2px;
+	padding-bottom: 0;
+	font-size: 16px;
+	background-color: #fb4226;
+	padding: 0 5px;
+	color: #fff;
+	border-radius: 4px;
+	text-align: center;
+	vertical-align: 2px;
 }
 #benTrai .tit1{
 	font-size: 24px;
 }
 #benhTrai .times1{
-	    font-size: 16px;
+	font-size: 16px;
 }
 #benTrai .day1{
 	color: #e9e9e9!important;
@@ -239,107 +239,209 @@ top: 17%;
 .noiDungDV #mid{width: 52%;height: 100%;float: left;position: relative;}
 #mid .info_rap{
 	width: 800px;
-    font-size: 14px;
-    color: #9b9b9b!important;
-    margin: 0 auto;
-    margin-top:50px;
-    font-style: italic;
+	font-size: 14px;
+	color: #9b9b9b!important;
+	margin: 0 auto;
+	margin-top:50px;
+	font-style: italic;
 }
 #mid .ticket{
-	    width: 800px;
-    margin: 0 auto;
-    margin-top: 30px;
-    height: 60px;
+	width: 800px;
+	margin: 0 auto;
+	margin-top: 30px;
+	height: 60px;
 }
 #mid .ticket .typeticket{
 	font-size: 16px;
-    padding-left: 0;
+	padding-left: 0;
 }
 #mid .ticket .typeticket .note{
 	
-    color: #9b9b9b!important;
-    font-size: 12px;
+	color: #9b9b9b!important;
+	font-size: 12px;
 }
 #mid .ticket .price{
-	    color: #44c020!important;
-    font-size: 18px;
-    text-align: center;
+	color: #44c020!important;
+	font-size: 18px;
+	text-align: center;
 }
 #mid .ticket .num{
 	text-align: right;
-    padding-right: 100px;
-    float: left;
+	padding-right: 100px;
+	float: left;
 }
 #mid .ticket .num .minus{
 	color: #FB4226 !important;
 	margin-right: 17px;
-    background: 0 0;
-    border: transparent;
-    transform: scaleX(3);
-    font-size: 16px;
-    cursor: pointer;
+	background: 0 0;
+	border: transparent;
+	transform: scaleX(3);
+	font-size: 16px;
+	cursor: pointer;
 }
 #mid .ticket .num .soluong{
 	font-size: 16px;
-    border: 1px solid #e9e9e9;
-    border-radius: 4px;
-    height: 32px;
-    width: 32px;
-    text-align: center;
-    display: inline-block;
-    padding-top: 4px;
+	border: 1px solid #e9e9e9;
+	border-radius: 4px;
+	height: 32px;
+	width: 32px;
+	text-align: center;
+	display: inline-block;
+	padding-top: 4px;
 }
 #mid .ticket .num .add{
 	margin-left: 13px;
-    background: 0 0;
-    border: transparent;
-    color: #fb4226!important;
-    transform: scale(1.5);
-    font-size: 16px;
-    cursor: pointer;
+	background: 0 0;
+	border: transparent;
+	color: #fb4226!important;
+	transform: scale(1.5);
+	font-size: 16px;
+	cursor: pointer;
 }
 
 
-.noiDungDV #benPhai{width: 325px;height: 100%;background: yellow;position: relative;float: left;}
+.noiDungDV #benPhai{
+	width: 240px;
+	height: 100%;
+	position: relative;
+	float: left;
+	background-color: #fff;
+	box-shadow: 0 0 15px rgba(0,0,0,.3);
+	z-index: 3;
+	height: 100%;
+}
 .noiDungDV #mid #tongTien{width: 800px;height: 100px;position: relative; margin:0 auto; margin-top:20px;    border: 1px solid #e9e9e9;}
 #tongTien .total_cost{
 	position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border: solid ##e9e9e9 1px;
-    margin-left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	border: solid ##e9e9e9 1px;
+	margin-left: 20px;
 }
 #tongTien .total_cost .title{
-	    color: #9b9b9b!important;
-    font-size: 12px;
+	color: #9b9b9b!important;
+	font-size: 12px;
 }
 #tongTien .total_cost .cost{
 	font-family: 'SF Medium';
-    font-size: 24px;
-    color: #44c020!important;
+	font-size: 24px;
+	color: #44c020!important;
 }
 .noiDungDV #mid #tongTien .nutDatve .continue{
 	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%,-50%,0);
-    width: 100px;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%,-50%,0);
+	width: 100px;
 }
 
 .noiDungDV #mid #tongTien .nutDatve{   
-    width: 25%;
-    flex: 0 0 25%;
-    /* flex: 0 0 75%; */
-    position: relative;
-    float: left;
-    cursor: pointer;
-    font-size: 16px;
-    padding-top: 9%;
-    text-align: center;
-    color: #e9e9e9!important;
-    background-image: linear-gradient(223deg,#b4ec51 0,#429321 100%);
+	width: 25%;
+	flex: 0 0 25%;
+	/* flex: 0 0 75%; */
+	position: relative;
+	float: left;
+	cursor: pointer;
+	font-size: 16px;
+	padding-top: 9%;
+	text-align: center;
+	color: #e9e9e9!important;
+	background-image: linear-gradient(223deg,#b4ec51 0,#429321 100%);
 }
 
+.noiDungDV #benPhai .cost{
+	position: relative;
+	border-bottom: 1px dashed #e9e9e9;
+	/* height: 80px; */
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 28px;
+	font-family: "SF Medium";
+	color: #44c020!important;
+}
+#benPhai .info_rap{
+	font-size: 12px;
+	color: #9b9b9b!important;
+	font-style: italic;
+	margin: 0 auto;
+	padding-left: 20px;
+	border-bottom: 1px dashed #e9e9e9;
+}
+#benPhai .info_rap .age1{
+	margin-right: 7px;
+	padding-bottom: 0;
+	font-size: 16px;
+	background-color: #fb4226;
+	padding: 0 5px;
+	color: #fff;
+	border-radius: 4px;
+	text-align: center;
+	vertical-align: 2px;
+}
+#benPhai .info_rap .tit1{
+	font-size: 24px;
+	font-style: bold;
+	color: black;
+	font-weight: 500;
+}
+#benPhai .info_khach{
+	padding-bottom: 10px;
+	padding-top:10px;
+	font-size: 14px;
+	color: #9b9b9b!important;
+	font-style: italic;
+	margin: 0 auto;
+	padding-left: 20px;
+	border-bottom: 1px dashed #e9e9e9;
+}
+.check_pay{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.payment{
+	font-size:14px;
+}
+.thanhtoan{
+	padding-top: 10px;
+	border-bottom: 1px dashed #e9e9e9;
+	padding-bottom:10px;
+}
+.tittle_pay{
+	margin-left: 19px;
+}
+#benPhai .luuy{
+	padding-left: 10px;
+	padding-right: 10px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 60;
+	padding-bottom: 10px;
+	margin-right: 4px;
+	background: #fff;
+	text-align: center;
+	padding-top: 40px;
+}
+
+#benPhai .luuy .title{
+	font-size: 14px;
+	color: #4a4a4a;
+
+}
+#benPhai .nutThanhtoan{
+	position: absolute;
+	width: 100%;
+	top: 89%;
+}
+#benPhai .nutThanhtoan button{
+	width: 100%;
+	border: none;
+	height: 60px;
+	background: red;
+	color: white;
+	cursor: pointer;
+}
 .noiDungDV .chonGhe{    position: absolute;width: 764px;height: 400px;background: pink;top: 16%;left: 8%;opacity: 0;visibility: hidden;}
 .noiDungDV .showChonGhePartDV{animation:showDatGhePartDV 0.8s; left: 8%;top: 16%;opacity: 1;visibility: visible; }
 
