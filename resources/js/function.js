@@ -174,7 +174,7 @@ $('.numberGhe').before().click(function() {
 
 /* dat ve*/
 
-$('.nutDatVe').click(function(){
+$('.noiDungDV #mid #tongTien .nutDatve').click(function(){
 	$('header .header1 ul li h5').removeClass('choseShow');
 	$('header .header1 ul li h5:nth-child(1)').addClass('choseShow');
 	$('.partChildDV').removeClass('diSangPhai');
