@@ -175,14 +175,14 @@ $('.numberGhe').before().click(function() {
 /* dat ve*/
 
 $('.nutDatVe').click(function(){
-	$('header .header1 ul li h5').removeClass('choseShow');
-	$('header .header1 ul li h5:nth-child(1)').addClass('choseShow');
+	$('.header1 ul li').removeClass('choseShow');
+	$('.header1 ul li:nth-child(1)').addClass('choseShow');
 	$('.partChildDV').removeClass('diSangPhai');
 	$('.partChildDV').addClass('diSangTrai');
-		$('.chonGhe').removeClass('hideDatGhePartDV');
+	$('.chonGhe').removeClass('hideDatGhePartDV');
 	$('.chonGhe').addClass('showChonGhePartDV');
 });
-$('header .header1 ul li h5:nth-child(1)').click(function(){
+$('.header1 ul li h5:nth-child(1)').click(function(){
 	$('.partChildDV').removeClass('diSangTrai');
 	$('.partChildDV').addClass('diSangPhai');
 	$('.chonGhe').removeClass('showChonGhePartDV');
