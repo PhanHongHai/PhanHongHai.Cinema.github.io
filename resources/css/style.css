@@ -92,6 +92,7 @@ header .layerCha .slideImg .slideChild .ndPhim h4 a{color:#ff5860; }
 @-webkit-keyframes hideSearchZoom{0%{top: 67%;} 100%{top: 16%;}}
 /* end search */
 /*  end header */
+<<<<<<< HEAD
 /* part 2 */
 .part2 .listMovies{     z-index: 3;   width: 100%;height: 139px;background: #28282d;color: #CCCCCC;box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);font-family: ubuntu;position: relative;}
 .part2 .listMovies:before{content: '';position: absolute;top: 0;left: 0;width: 100%;height: 2px;    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);}
@@ -208,3 +209,145 @@ header .header1 ul li h5.choseShow:before{content: '';position: absolute;bottom:
     position: relative;}
 .qlNhanVien1,.qlNhanVien2{position: absolute;top: 0;left: 0;}
 /* end admin */
+=======
+/* ----Đăng nhập start-----
+ */
+.cha{
+    position: relative;
+}
+.cha img.banner {
+    height: 657px;
+}
+form.form-dn{ 
+    width: 400px;
+    height: 450px; 
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    background: #28282d;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);
+}
+form:before {  
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-image: linear-gradient(to right, #ff55a5 0%, #ff5860 100%);
+    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+}
+form .img-nen{
+    margin-left: 21%;
+    margin-top: 10%;
+}
+form.form-dn .theInput{
+    text-indent: 20px;
+    margin-top: 6%;
+}
+form.form-dn input {
+    border: none;
+    background: #2b2b31;
+    width: 89%;
+    height: 50px;
+    text-indent: 20px;
+    color: white;
+}
+form.form-dn .nutSubmit {
+    margin-top: 15%;    
+    margin-left: 5%;
+}
+form.form-dn .nutSubmit input{
+    background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+    border-radius: 2%;
+    color: white;
+    text-indent: 0%;
+}
+.form-dn h1 {
+    font-size: 13px;
+    color: white;
+    text-indent: 21%;
+    position: absolute;
+    bottom: 10%;
+}
+h1 a:hover {
+    color: #FF5860;
+    text-decoration: none;
+    margin-left: 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+h1 a {
+     color: #FF5860;
+    text-decoration: none;
+    margin-left: 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+/* ----Đăng nhập end----*/
+
+/*-------Đăng ký start-------*/
+.cha{
+    position: relative;
+}
+.cha img.banner {
+    height: 657px;
+}
+form.form-dk{ 
+    width: 400px;
+    height: 580px; 
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    background: #28282d;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px 0 rgba(0,0,0,0.3);
+}
+form:before {  
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-image: linear-gradient(to right, #ff55a5 0%, #ff5860 100%);
+    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+}
+form .img-nen{
+    margin-left: 21%;
+    margin-top: 5%;
+}
+form.form-dk input {
+    border: none;
+    background: #2b2b31;
+    width: 89%;
+    height: 50px;
+    text-indent: 10px;
+    color: white;
+}
+form.form-dk .theInput{
+    text-indent: 20px;
+    margin-top: 3%;
+}
+form.form-dk .theInput1 {
+    text-indent: 20px;
+    margin-top: 3%;
+    width: 100%;
+}
+form.form-dk .theInput2 {
+    text-indent: -2%;
+    margin-top: 3%;
+    width: 100%;
+}
+
+form.form-dk .nutSubmit {
+    margin-top: 5%;    
+    margin-left: 5%;
+}
+form.form-dk .nutSubmit input{
+    background-image: linear-gradient(90deg, #ff55a5 0%, #ff5860 100%);
+    box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
+    border-radius: 2%;
+    color: white;
+    text-indent: 0%;
+}
+/*-------Đăng ký end-------*/
+>>>>>>> leanh1
