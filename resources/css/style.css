@@ -31,15 +31,185 @@
 }
 /* end font */
 
-
 /*------Dieu khoan su dung start--------*/
 .dksdMain{
-       width: 400px;
-    height: 300px;
-    background: red;
+    margin-top: 11%;
+    margin-left: 5%;
+    width: 100%;
+}
+.dksd-title {
+    list-style-type: none;
+    margin-top: 15%;
+    margin-bottom: 2%;
+    color: wheat;
+    text-indent: 10%;
+}
+.dksdMain h4 {
+    list-style-type: none;
+    color: white;
+}
+ul.dksd-detail-2 {
+    list-style-type: none;
+}
+ul.dksd-detail {
+    list-style-type: none;
+    margin-left: -37px;
+}
+.dksdMain ol {
+    color: wheat;
+    font-size: 28px;
+}
+.dksdMain ol li {
+    margin-left: -5px;
+}
+.dksd-cha .layerCha {
+    height: 1650px;
+}
+.dksd-cha .layerCha #banner {
+    height: 1650px;
+}
+/*------Dieu khoan su dung end--------*/
+
+
+/*------Dieu khoan giao dich start--------*/
+.dkgdMain{
+    margin-top: 11%;
+    margin-left: 5%;
+    width: 100%;
+}
+.dkgd-title {
+    list-style-type: none;
+    margin-top: 15%;
+    margin-bottom: 2%;
+    color: wheat;
+    text-indent: 10%;
+}
+.dkgdMain h4 {
+    list-style-type: none;
+    color: white;
+    font-size: 15px;
+}
+ul.dkgd-detail-2 {
+    list-style-type: none;
+}
+.dkgd-detail-3 {
+    margin-top: 2%;
+}
+ul.dkgd-detail {
+    list-style-type: none;
+    margin-left: -37px;
+}
+.dkgdMain ol {
+    color: wheat;
+    font-size: 28px;
+}
+.dkgdMain ol li {
+    margin-left: -5px;
+}
+.dkgd-cha .layerCha {
+    height: 1950px;
+}
+.dkgd-cha .layerCha #banner {
+    height: 1950px;
 }
 
-/*------Dieu khoan su dung end--------*/
+/*------Dieu khoan giao dich end--------*/
+
+
+/*------Chinh sach bao mat start--------*/
+.csbmMain{
+    margin-top: 11%;
+    margin-left: 5%;
+    width: 100%;
+}
+.csbm-title {
+    list-style-type: none;
+    margin-top: 15%;
+    margin-bottom: 2%;
+    color: wheat;
+    text-indent: 10%;
+}
+.csbmMain h4 {
+    list-style-type: none;
+    color: white;
+    font-size: 15px;
+}
+ul.csbm-detail-2 {
+    list-style-type: none;
+}
+.csbm-detail-3 {
+    margin-top: 2%;
+}
+ul.csbm-detail {
+    list-style-type: none;
+    margin-left: -37px;
+}
+.csbmMain ol {
+    color: wheat;
+    font-size: 28px;
+}
+.csbmMain ol li {
+    margin-left: -5px;
+}
+.csbm-cha .layerCha {
+    height: 1000px;
+}
+.csbm-cha .layerCha #banner {
+    height: 1000px;
+}
+
+/*------Chinh sach bao mat end--------*/
+
+
+/*------Gioi thieu start--------*/
+
+.gioi-thieuMain{
+    margin-top: 11%;
+    margin-left: 5%;
+    width: 100%;
+}
+.gioi-thieu-title {
+    list-style-type: none;
+    margin-top: 15%;
+    margin-bottom: 2%;
+    color: wheat;
+    text-indent: 10%;
+}
+.gioi-thieuMain h4 {
+    list-style-type: none;
+    color: white;
+    font-size: 15px;
+}
+ul.gioi-thieu-detail-2 {
+    list-style-type: none;
+}
+.gioi-thieu-detail h4 {
+    margin-top: 3%;
+}
+ul.gioi-thieu-detail {
+    list-style-type: none;
+    margin-left: -37px;
+}
+.gioi-thieuMain ol {
+    color: wheat;
+    font-size: 28px;
+}
+.gioi-thieuMain ol li {
+    margin-left: -5px;
+    list-style-type: none;
+}
+.gioi-thieu-img {
+    margin-top: 2%;
+}
+.gioi-thieu-cha .layerCha {
+    height: 900px;
+}
+.gioi-thieu-cha .layerCha #banner {
+    height: 900px;
+}
+
+/*------Gioi thieu end--------*/
+
 
 /*  header  */
 header{position: relative;}
@@ -354,15 +524,3 @@ header .header1 ul li h5.choseShow:before{content: '';position: absolute;bottom:
 @-webkit-keyframes showDatGhePartDV{0%{opacity: 0;visibility: hidden;transform: translateX(1223PX);} 100%{opacity: 1;visibility: visible;transform: translateX(0px);}}
 @-webkit-keyframes hideDatGhePartDV{0%{opacity: 1;visibility: visible;transform: translateX(0px);} 100%{opacity: 0;visibility: hidden;transform: translateX(1223PX);}
 /*  end page dat ve */
-
-
-
-/*------Dieu khoan su dung start--------*/
-#dksdFix{
-       width: 400px;
-    height: 300px;
-    background: red;
-}
-
-/*------Dieu khoan su dung end--------*/
-
