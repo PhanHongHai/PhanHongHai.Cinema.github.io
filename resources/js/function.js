@@ -175,7 +175,6 @@ $(function(){
 
 	/* dat ve*/
 
-<<<<<<< HEAD
 $('.noiDungDV #mid #tongTien .nutDatve').click(function(){
 	$('.header1 ul li h5').removeClass('choseShow');
 	$('#h5Vien').addClass('choseShow');
@@ -194,7 +193,6 @@ $('header .header1 ul li:nth-child(1)').click(function(){
 	$('.chonGhe').addClass('hideDatGhePartDV');
 })
 /* end dat ve*/
-=======
 	$('.nutDatVe').click(function(){
 		$('.header1 ul li').removeClass('choseShow');
 		$('.header1 ul li:nth-child(1)').addClass('choseShow');
@@ -210,7 +208,6 @@ $('header .header1 ul li:nth-child(1)').click(function(){
 		$('.chonGhe').addClass('hideDatGhePartDV');
 	})
 	/* end dat ve*/
->>>>>>> Hai1
 
 	/* admin*/
 
