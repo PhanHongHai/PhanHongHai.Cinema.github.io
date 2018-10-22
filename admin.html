@@ -10,8 +10,9 @@
 	<link href="resources/css/metismenu.min.css" rel="stylesheet" type="text/css" />
 	<link href="resources/css/style_dark.css" rel="stylesheet" type="text/css" />
 	<link href="resources/css/style.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="resources/css/angular-material.min.css">
+	
 	<script src="resources/js/modernizr.min.js"></script>
+	<!-- <link rel="stylesheet" href="resources/css/angular-material.min.css"> -->
 </head>
 <body>
 	
@@ -267,64 +268,56 @@
 									</div>
 								</div>
 							</div>
-							<div class="qlNhanVien2">
+							<div class="qlNhanVien2" ng-app="myApp" ng-controller="MyController">
 								<div class="edit">
 									<div class="card-box">
-										<h4 class="m-t-0 header-title text-center">Danh sach nhan vien</h4>
-										<div class="card-box table-responsive">
-											<table id="datatable1" class="table table-bordered">
-												<thead>
-													<tr>
-														<th>ID</th>
-														<th>Tên</th>
-														<th>Giới Tính</th>
-														<th>Tài khoản</th>
-														<th>Mật Khẩu</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Tiger Nixon</td>
-														<td>System Architect</td>
-														<td>Edinburgh</td>
-														<td>Edinburgh</td>
-														<td>Edinburgh</td>
+										<h4 class="m-t-0 header-title text-center">Sua thong tin nhan vien</h4>	
+									</div>
+									<div class="container">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="card">
+													<h6 class="card-header">Ten nhanh vien<b class="float-right" "><i class="icon-pencil" ng-click="showEdit()"></i></b></h6>
+													<div class="suaInfo" ng-show="hienThi">	
+														<div class="card-body">
+															Ten nhan vien : <input class="form-control" value="ten nhan vien"></input>
+															Gioi tinh : <input class="form-control" value="Gioi tinh"></input>	
+															Tai khoan : <input class="form-control" value="Tai khoan"></input>			
+															Pass : <input class="form-control" value="Pass"></input>			
+															<b class="float-right btn btn-outline-danger btn-block" ng-click="showEdit()">Luu</b>
+														</div>
+													</div>	
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="card">
+													<h6 class="card-header">Ten nhanh vien<b class="float-right"><i class="icon-pencil"></i></b></h6>
+													<div class="suaInfo" ng-show="hienThi">	
+														<div class="card-body">
+															Ten nhan vien : <input class="form-control" value="ten nhan vien"></input>
+															Gioi tinh : <input class="form-control" value="Gioi tinh"></input>	
+															Tai khoan : <input class="form-control" value="Tai khoan"></input>			
+															Pass : <input class="form-control" value="Pass"></input>			
+															<b class="float-right btn btn-outline-danger btn-block" ng-click="showEdit()">Luu</b>
+														</div>
+													</div>	
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="card">
+													<h6 class="card-header">Ten nhanh vien<b class="float-right"><i class="icon-pencil"></i></b></h6>
+													<div class="suaInfo" ng-show="hienThi">	
+														<div class="card-body">
+															Ten nhan vien : <input class="form-control" value="ten nhan vien"></input>
+															Gioi tinh : <input class="form-control" value="Gioi tinh"></input>	
+															Tai khoan : <input class="form-control" value="Tai khoan"></input>			
+															Pass : <input class="form-control" value="Pass"></input>			
+															<b class="float-right btn btn-outline-danger btn-block" ng-click="showEdit()">Luu</b>
+														</div>
+													</div>	
+												</div>
+											</div>
 
-													</tr>
-													<tr>
-														<td>Garrett Winters</td>
-														<td>Accountant</td>
-														<td>Tokyo</td>
-														<td>Tokyo</td>
-														<td>Tokyo</td>
-
-													</tr>
-													<tr>
-														<td>Ashton Cox</td>
-														<td>Junior Technical Author</td>
-														<td>San Francisco</td>
-														<td>San Francisco</td>
-														<td>San Francisco</td>
-
-													</tr>
-													<tr>
-														<td>Michael Bruce</td>
-														<td>Javascript Developer</td>
-														<td>Singapore</td>
-														<td>Singapore</td>
-														<td>Singapore</td>
-
-													</tr>
-													<tr>
-														<td>Donna Snider</td>
-														<td>Customer Support</td>
-														<td>New York</td>
-														<td>New York</td>
-														<td>New York</td>
-
-													</tr>
-												</tbody>
-											</table>
 										</div>
 									</div>
 								</div>
@@ -332,14 +325,15 @@
 						</div>
 					</div>
 				</div>
-				<!-- end row -->
-			</div> <!-- container -->
+			</div>
+			<!-- end row -->
+		</div> <!-- container -->
 
-		</div> <!-- content -->
-	</div>
-	<!-- ============================================================== -->
-	<!-- End Right content here -->
-	<!-- ============================================================== -->
+	</div> <!-- content -->
+</div>
+<!-- ============================================================== -->
+<!-- End Right content here -->
+<!-- ============================================================== -->
 
 
 </div>
@@ -440,12 +434,12 @@
    <!--  angularjs -->
 
    <script type="text/javascript" src="resources/js/bootstrap.js"></script>  
-   <script type="text/javascript" src="resources/js/angular.min.js"></script>  
+   <script type="text/javascript" src="resources/js/angular-1.5.min.js"></script>  
    <script type="text/javascript" src="resources/js/angular-animate.min.js"></script>
    <script type="text/javascript" src="resources/js/angular-aria.min.js"></script>
    <script type="text/javascript" src="resources/js/angular-messages.min.js"></script>
-   <script type="text/javascript" src="resources/js/angular-material.min.js"></script>  
-      <script type="text/javascript" src="resources/js/functionAngular.js"></script>
+   <script type="text/javascript" src="resources/js/angular-material.min.js"></script>
+   <script type="text/javascript" src="resources/js/functionAngular.js"></script> -->
    <!--  end angularjs -->
 </body>
 </html>
