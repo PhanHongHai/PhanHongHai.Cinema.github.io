@@ -23,7 +23,6 @@
 /*  end srcoll bar */
 
 /* import font  */
-<<<<<<< HEAD
 @font-face{font-family:ubuntu; src:url('../font/unbutu/Ubuntu-Light.ttf') format('truetype'),url('../font/unbutu/Ubuntu-Regular.ttf') format('truetype'),url('../font/unbutu/Ubuntu-Medium.ttf') format('truetype');font-weight:normal;
 font-style:normal;}
 @font-face{font-family: roboto; src:url('../font/roboto/Roboto-Regular.ttf') format('truetype'),url('../font/Roboto-Medium.ttf') format('truetype'),
@@ -33,7 +32,6 @@ url('../font/roboto/Roboto-Bold.ttf') format('truetype'),url('../font/roboto/Rob
  font-style:normal;}
 @font-face{font-family: roboto; src:url('../fonts/roboto/Roboto-Regular.ttf') format('truetype'),url('../fonts/Roboto-Medium.ttf') format('truetype'),
 	url('../fonts/roboto/Roboto-Bold.ttf') format('truetype'),url('../fonts/roboto/Roboto-Light.ttf') format('truetype');font-weight:normal;font-style:normal;
->>>>>>> Hai1
 }
 /* end font */
 /*  header  */
