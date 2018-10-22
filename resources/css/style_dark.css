@@ -5665,12 +5665,13 @@ h3.timeline-title {
 }
 
 .account-page-full {
-  right: 0;
-  position: absolute;
-  height: 100%;
-  margin: 0;
-  width: 540px;
-  background-color: #ffffff;
+       position: absolute;
+    height: 64%;
+    margin: 0;
+    width: 400px;
+    background-color: #2b2b31;
+    left: 39%;
+    top: 16%;
 }
 
 .account-page-full .card {
@@ -6017,5 +6018,5 @@ h3.timeline-title {
 }
 /*# sourceMappingURL=style_dark.css.map */
 /*  custom admin */
-
+form.AdminLogin .nutLoginAD{    margin-top: 14%;}
 /*  end custom */
