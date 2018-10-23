@@ -47,6 +47,7 @@
 .dksdMain h4 {
     list-style-type: none;
     color: white;
+    font-size: 15px;
 }
 ul.dksd-detail-2 {
     list-style-type: none;
@@ -63,10 +64,10 @@ ul.dksd-detail {
     margin-left: -5px;
 }
 .dksd-cha .layerCha {
-    height: 1650px;
+    height: 1050px;
 }
 .dksd-cha .layerCha #banner {
-    height: 1650px;
+    height: 1050px;
 }
 /*------Dieu khoan su dung end--------*/
 
