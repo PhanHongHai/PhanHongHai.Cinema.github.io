@@ -121,11 +121,12 @@
 		display: block;
 		box-shadow: 0 0 20px 0 rgba(255,88,96,0.5);
 	}
-	.menu_tab{
+	.tablink .menu_tab{
 		width: 500px;
 		height: 60px;
 		margin-top: 30px;
 		font-size: 24px;
+		    margin-left: 395px;
 	}
 	.menu_tab button{
 		background-color: inherit; 
